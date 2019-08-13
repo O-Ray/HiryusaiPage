@@ -25,3 +25,12 @@ $(function() {
 
   });
 });
+
+function mouseOnProject(num){
+  document.getElementById('subDisplay' + num).style.display = 'none';
+  document.getElementById('mainDisplay' + num).style.display = 'inline';
+}
+function mouseOutProject(num){
+  document.getElementById('subDisplay' + num).style.display = 'inline';
+  document.getElementById('mainDisplay' + num).style.display = 'none';
+}
